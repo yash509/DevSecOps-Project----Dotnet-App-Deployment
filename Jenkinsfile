@@ -54,7 +54,7 @@ pipeline{
         }
         stage("TRIVY"){
             steps{
-                sh "trivy image sevenajay/dotnet-monitoring:latest > trivy.txt"
+                sh "trivy image yash5090/dotnet-monitoring:latest > trivy.txt"
             }
         }
         stage("Docker Push"){
