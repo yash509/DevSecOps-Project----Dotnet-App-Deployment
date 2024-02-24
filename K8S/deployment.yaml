@@ -19,7 +19,7 @@ spec:
             - containerPort: 5000 # Expose the port specified in your Dockerfile
 
 ---
-apiVersion: v1
+apiVersion: apps/v1
 kind: Service
 metadata:
   name: dotnet-app-service
