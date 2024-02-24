@@ -1,6 +1,3 @@
-//
-// Client side code used on Monitor.cshtml page
-//
 
 const DATA_INTERVAL = 3000;
 var wsChart, cpuCHart;
