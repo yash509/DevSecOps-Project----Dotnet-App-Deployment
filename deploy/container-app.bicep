@@ -1,6 +1,4 @@
-// ============================================================================
-// Deploy a container app with app container environment and log analytics
-// ============================================================================
+
 
 @description('Name of container app')
 param appName string = 'dotnet-demoapp'
