@@ -1,7 +1,3 @@
-# =======================================================
-# Stage 1 - Build/compile app using container
-# =======================================================
-
 ARG IMAGE_BASE=6.0-alpine
 
 # Build image has SDK and tools (Linux)
@@ -15,10 +11,6 @@ COPY src ./src
 WORKDIR /build/src
 RUN dotnet restore
 RUN dotnet publish --no-restore --configuration Release
-
-# =======================================================
-# Stage 2 - Assemble runtime image from previous stage
-# =======================================================
 
 # Base image is .NET Core runtime only (Linux)
 FROM mcr.microsoft.com/dotnet/aspnet:$IMAGE_BASE
